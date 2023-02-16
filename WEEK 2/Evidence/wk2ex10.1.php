@@ -8,14 +8,14 @@ $mymarks["year 3"]= 75;
 <title>Data in table</title>
 </head>
 <body>
-<table border=1 align="center">
-<tr><th>Index</th><th>Subject</th></tr> 
+<table border=1 align="left"> 
+<tr><th>Year</th><th>Grade</th></tr> 
 
 <?php
-  for($count = 0;$count < 3;$count++)
+  foreach( $mymarks as $index => $value)
   {
-    echo "<tr><td>$count</td><td>$count[$mymarks]</td></tr>";
-  }	
+    echo "<tr><td>$index</td><td>$value</td></tr>";
+  }
 ?>
 </table>
 </body>
