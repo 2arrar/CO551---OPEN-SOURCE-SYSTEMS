@@ -6,7 +6,7 @@
  <?php $_SESSION['sesQuant'] = $_POST['selqty']; ?>
  <body>
   <form  action="selectcolour.php" method="post">
-   Select the qty of widgets you require
+   Select the Size of widgets you require
    <select name="selsize">
 		<option>Small</option> <!-- 15.75 --> 
 		<option>Medium</option> <!-- 16.75 -->

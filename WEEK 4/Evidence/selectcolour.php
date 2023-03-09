@@ -3,7 +3,7 @@
     <body>
     <?php session_start(); ?>
       <form action="confirmation.php"  method="post">
-	        Select the colour for the <?php echo $_SESSION['sesQuant']; ?> widgets you are ordering
+	        Select the colour for the <?php echo $_SESSION['sesQuant']; echo $_SESSION['sesSize'] ?> widgets you are ordering
           
           <?php $_SESSION['sesSize'] = $_POST['selsize']?>
    	        <select name="selcolour">
